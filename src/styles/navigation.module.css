@@ -1,0 +1,29 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .8em 3.5em;
+    color: rgb(141, 141, 248);
+    background-color: #373737;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 1.8em;
+    font-weight: bold;
+    color: rgb(141, 141, 248);
+}
+
+ul li {
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+ul li:hover {
+    color: #fff;
+}
