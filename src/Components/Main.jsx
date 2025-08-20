@@ -1,5 +1,5 @@
-import mainStyles from '../styles/main.module.css';
-import myImg from '../../public/gato.jpg';
+import mainStyles from "../styles/main.module.css";
+import myImg from "../../public/gato.jpg";
 import { FaHtml5 } from "react-icons/fa";
 import { FaCss3Alt } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
@@ -10,50 +10,69 @@ import { FaGithub } from "react-icons/fa";
 import { SiMongodb } from "react-icons/si";
 import { FaInstagram } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
-import { MdEmail } from "react-icons/md"
-
+import { MdEmail } from "react-icons/md";
 
 function Main() {
   return (
     <div className={mainStyles.mainContainer}>
       <section className={mainStyles.introSection}>
-        <h1>Olá, eu sou <span>Isac</span></h1>
+        <h1>
+          Olá, eu sou <span>Isac</span> 🧑‍💻
+        </h1>
         <p>Desenvolvedor Frontend | Backend</p>
         <button>Ver projetos</button>
       </section>
       <section className={mainStyles.imageSection}>
         <img src={myImg} alt="Imagem de Isac" />
         <div className={mainStyles.aboutMe}>
-            <h2>Sobre mim</h2>
-            <p>
-                Sou um desenvolvedor apaixonado por tecnologia, atualmente cursando Engenharia de Computação na Universidade Federal do Ceará (UFC). Tenho 23 anos e foco em construir soluções modernas e funcionais, com experiência em desenvolvimento web fullstack, mobile e machine learning. Busco sempre aprender novas tecnologias e enfrentar desafios que me façam evoluir como profissional.
-            </p>
+          <h2>Sobre mim</h2>
+          <p>
+            Sou um desenvolvedor apaixonado por tecnologia, atualmente formado
+            em Engenharia de Computação pela Universidade Federal do Ceará
+            (UFC). Tenho 23 anos e foco em construir soluções modernas e
+            funcionais, com experiência em desenvolvimento web fullstack, mobile
+            e machine learning. Busco sempre aprender novas tecnologias e
+            enfrentar desafios que me façam evoluir como profissional.
+          </p>
         </div>
       </section>
       <section className={mainStyles.skillsAndFormationSection}>
-        
         <div className={mainStyles.rightSide}>
-            <h2>Skills</h2>
-            <ul >
-                <li><FaHtml5 className={mainStyles.icon} /></li>
-                <li>React</li>
-                <li>Node.js</li>
-                <li>Python</li>
-                <li>Machine Learning</li>
-                <li>HTML & CSS</li>
-            </ul>
-        </div>    
-        
+          <h2><span>Skills</span></h2>
+          <ul>
+            <li>
+              <IoLogoJavascript className={mainStyles.icon} color="#F7DF1E" />
+            </li>
+            <li>
+              <FaHtml5 className={mainStyles.icon} color="#E34F26" />
+            </li>
+            <li>
+              <FaCss3Alt className={mainStyles.icon} color="#1572B6" />
+            </li>
+            <li>
+              <FaReact className={mainStyles.icon} color="#61DAFB" />
+            </li>
+            <li>
+              <SiTypescript className={mainStyles.icon} color="#3178C6" />
+            </li>
+            <li>
+              <FaGithub className={mainStyles.icon} color="#181717" />
+            </li>
+            <li>
+              <FaNodeJs className={mainStyles.icon} color="#339933" />
+            </li>
+            <li>
+              <SiMongodb className={mainStyles.icon} color="#47A248" />
+            </li>
+          </ul>
+        </div>
+
         <div className={mainStyles.leftSide}>
-            <h2>Formação</h2>
-            <ul className={mainStyles.skillsList}>
-                <li>JavaScript</li>
-                <li>React</li>
-                <li>Node.js</li>
-                <li>Python</li>
-                <li>Machine Learning</li>
-                <li>HTML & CSS</li>
-            </ul>
+          <h2><span>Formação acadêmica</span></h2>
+          <ul className={mainStyles.skillsList}>
+            <li>Ensino médio profissionalizate: <span>Redes de Computadores</span> (3 anos de duração)</li>
+            <li>Graduação: <span>Engenharia de Computação</span> (Universidade Federal do Ceará)</li>
+          </ul>
         </div>
       </section>
 
@@ -84,19 +103,42 @@ function Main() {
             <h3>Projeto 2</h3>
             <p>Descrição do projeto 2.</p>
           </div>
-          
+        </div>
+      </section>
+
+      <section className={mainStyles.experienceSection}> 
+        <h2>Experiências profissionais</h2>
+        <div className={mainStyles.experienceList}>
+          <div className={mainStyles.experienceItem}>
+            <h3>Empresa 1</h3>
+            <p>Cargo: Desenvolvedor Frontend</p>
+            <p>Duração: 1 ano</p>
+          </div>
+          <div className={mainStyles.experienceItem}>
+            <h3>Empresa 2</h3>
+            <p>Cargo: Desenvolvedor Backend</p>
+            <p>Duração: 6 meses</p>
+          </div>
         </div>
       </section>
 
       <section className={mainStyles.contactSection}>
         <h2>Contato</h2>
-        <div>
+        <div className={mainStyles.contactInfo}>
           <p>Você pode me encontrar:</p>
           <ul className={mainStyles.socialLinks}>
-            <li><FaGithub className={mainStyles.icon} /> GitHub</li>
-            <li><FaInstagram className={mainStyles.icon} /> Instagram</li>
-            <li><FaLinkedin className={mainStyles.icon} /> Linkedin</li>
-            <li><MdEmail className={mainStyles.icon} /> Email</li>
+            <li>
+              <FaGithub className={mainStyles.icon} /> 
+            </li>
+            <li>
+              <FaInstagram className={mainStyles.icon} /> 
+            </li>
+            <li>
+              <FaLinkedin className={mainStyles.icon} /> 
+            </li>
+            <li>
+              <MdEmail className={mainStyles.icon} /> 
+            </li>
           </ul>
         </div>
       </section>

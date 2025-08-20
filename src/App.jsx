@@ -7,16 +7,9 @@ function App() {
 
   return (
     <div className='app-container'>
-      <nav>
         <Navigation />
-      </nav>
-      <main>
         <Main />
-      </main>
-
-      <footer>
         <Footer />
-      </footer>
     </div>
   )
 }

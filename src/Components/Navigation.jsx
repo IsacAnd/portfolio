@@ -2,7 +2,8 @@ import navigationStyles from '../styles/navigation.module.css';
 
 function Navigation() {
   return (
-    <nav className={navigationStyles.nav}>
+    <div className={navigationStyles.navigationContainer}>
+      <nav className={navigationStyles.nav}>
       <div>
         <h2>Portfolio</h2>
       </div>
@@ -12,6 +13,7 @@ function Navigation() {
         <li>Contato</li>
       </ul>
     </nav>
+    </div>
   );
 }
 
