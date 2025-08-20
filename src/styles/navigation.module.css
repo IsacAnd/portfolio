@@ -1,0 +1,40 @@
+.navigationContainer {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.308);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3px); 
+    transition: background-color 0.3s ease; 
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.3em 5em;
+    color: rgb(141, 141, 248);
+    box-sizing: border-box;
+    width: 100%;    
+    position: sticky;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 1.8em;
+    font-weight: bold;
+    color: rgb(141, 141, 248);
+}
+
+ul li {
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+ul li:hover {
+    color: #fff;
+}
