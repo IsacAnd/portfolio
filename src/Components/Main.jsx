@@ -15,6 +15,30 @@ import { MdEmail } from "react-icons/md";
 function Main() {
   return (
     <div className={mainStyles.mainContainer}>
+      <div
+        className={mainStyles.shape + " " + mainStyles.circle}
+        style={{ top: "5%", left: "10%", width: "100px", height: "100px" }}
+      ></div>
+      <div
+        className={mainStyles.shape + " " + mainStyles.square}
+        style={{ bottom: "10%", right: "15%", width: "120px", height: "120px" }}
+      ></div>
+      <div
+        className={mainStyles.shape + " " + mainStyles.triangle}
+        style={{ top: "20%", right: "20%" }}
+      ></div>
+      <div
+        className={mainStyles.shape + " " + mainStyles.ellipse}
+        style={{ bottom: "25%", left: "5%" }}
+      ></div>
+      <div
+        className={mainStyles.shape + " " + mainStyles.circle}
+        style={{ top: "50%", left: "50%", width: "80px", height: "80px" }}
+      ></div>
+      <div
+        className={mainStyles.shape + " " + mainStyles.square}
+        style={{ top: "70%", right: "10%", width: "90px", height: "90px" }}
+      ></div>
       <section className={mainStyles.introSection}>
         <h1>
           Olá, eu sou <span>Isac</span> 🧑‍💻
@@ -38,7 +62,9 @@ function Main() {
       </section>
       <section className={mainStyles.skillsAndFormationSection}>
         <div className={mainStyles.rightSide}>
-          <h2><span>Skills</span></h2>
+          <h2>
+            <span>Skills</span>
+          </h2>
           <ul>
             <li>
               <IoLogoJavascript className={mainStyles.icon} color="#F7DF1E" />
@@ -68,10 +94,18 @@ function Main() {
         </div>
 
         <div className={mainStyles.leftSide}>
-          <h2><span>Formação acadêmica</span></h2>
+          <h2>
+            <span>Formação acadêmica</span>
+          </h2>
           <ul className={mainStyles.skillsList}>
-            <li>Ensino médio profissionalizate: <span>Redes de Computadores</span> (3 anos de duração)</li>
-            <li>Graduação: <span>Engenharia de Computação</span> (Universidade Federal do Ceará)</li>
+            <li>
+              Ensino médio profissionalizate: <span>Redes de Computadores</span>{" "}
+              (3 anos de duração)
+            </li>
+            <li>
+              Graduação: <span>Engenharia de Computação</span> (Universidade
+              Federal do Ceará)
+            </li>
           </ul>
         </div>
       </section>
@@ -106,7 +140,7 @@ function Main() {
         </div>
       </section>
 
-      <section className={mainStyles.experienceSection}> 
+      <section className={mainStyles.experienceSection}>
         <h2>Experiências profissionais</h2>
         <div className={mainStyles.experienceList}>
           <div className={mainStyles.experienceItem}>
@@ -128,16 +162,16 @@ function Main() {
           <p>Você pode me encontrar:</p>
           <ul className={mainStyles.socialLinks}>
             <li>
-              <FaGithub className={mainStyles.icon} /> 
+              <FaGithub className={mainStyles.icon} />
             </li>
             <li>
-              <FaInstagram className={mainStyles.icon} /> 
+              <FaInstagram className={mainStyles.icon} />
             </li>
             <li>
-              <FaLinkedin className={mainStyles.icon} /> 
+              <FaLinkedin className={mainStyles.icon} />
             </li>
             <li>
-              <MdEmail className={mainStyles.icon} /> 
+              <MdEmail className={mainStyles.icon} />
             </li>
           </ul>
         </div>

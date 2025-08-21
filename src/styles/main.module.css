@@ -12,13 +12,13 @@ section {
 }
 
 .mainContainer span {
-  color: rgb(141, 141, 248);
+  color: var(--primary-color);
 }
 
 .mainContainer button {
   background-color: transparent;
-  border: 1px solid rgb(141, 141, 248);
-  color: rgb(141, 141, 248);
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
   padding: 0.5em 1em;
   border-radius: 0.5em;
   cursor: pointer;
@@ -29,8 +29,8 @@ section {
 }
 
 .mainContainer button:hover {
-  background-color: rgb(141, 141, 248);
-  color: white;
+  background-color: var(--primary-color);
+  color: var(--bg-color);
 }
 
 .imageSection {
@@ -83,7 +83,7 @@ section {
   flex-direction: column;
   text-align: left;
   justify-content: flex-start;
-  border-right: 0.05em solid #000;
+  border-right: 0.05em solid var(--text-color);
   gap: 1em;
 }
 
@@ -112,7 +112,7 @@ section {
   display: flex;
   flex-direction: column;
   gap: 0.5em;
-  color: #000;
+  color: var(--text-color);
 }
 
 .leftSide .skillsList ul {
@@ -139,7 +139,7 @@ section {
 }
 
 .projectItem {
-  box-shadow: 1px 1px 8px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: 1px 1px 12px 3px var(--card-shadow);
   padding: 1em;
   border-radius: 10px;
   transition: box-shadow 0.3s ease;
@@ -166,4 +166,47 @@ section {
     display: flex;
     flex-direction: column;
     gap: .5em;
+}
+
+.shape {
+  position: absolute;
+  opacity: 0.12;
+  z-index: 0;
+  pointer-events: none;
+  animation: float 25s linear infinite;
+}
+
+/* Círculo */
+.shape.circle {
+  border-radius: 50%;
+  background-color: var(--primary-color);
+}
+
+/* Quadrado */
+.shape.square {
+  background-color: var(--primary-hover);
+}
+
+/* Triângulo usando clip-path */
+.shape.triangle {
+  width: 80px;
+  height: 80px;
+  background-color: var(--primary-color);
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+/* Elipse */
+.shape.ellipse {
+  width: 120px;
+  height: 60px;
+  background-color: var(--primary-hover);
+  border-radius: 50% / 50%;
+}
+
+@keyframes float {
+  0% { transform: translateY(0) translateX(0) rotate(0deg); }
+  25% { transform: translateY(-20px) translateX(10px) rotate(15deg); }
+  50% { transform: translateY(-40px) translateX(-10px) rotate(-15deg); }
+  75% { transform: translateY(-20px) translateX(10px) rotate(15deg); }
+  100% { transform: translateY(0) translateX(0) rotate(0deg); }
 }
