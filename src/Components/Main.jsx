@@ -111,34 +111,81 @@ function Main() {
       </section>
 
       <section className={mainStyles.projectsSection}>
-        <h2>Projetos</h2>
-        <div className={mainStyles.projectList}>
-          <div className={mainStyles.projectItem}>
-            <h3>Projeto 1</h3>
-            <p>Descrição do projeto 1.</p>
-          </div>
-          <div className={mainStyles.projectItem}>
-            <h3>Projeto 2</h3>
-            <p>Descrição do projeto 2.</p>
-          </div>
-          <div className={mainStyles.projectItem}>
-            <h3>Projeto 3</h3>
-            <p>Descrição do projeto 3.</p>
-          </div>
-          <div className={mainStyles.projectItem}>
-            <h3>Projeto 1</h3>
-            <p>Descrição do projeto 1.</p>
-          </div>
-          <div className={mainStyles.projectItem}>
-            <h3>Projeto 2</h3>
-            <p>Descrição do projeto 2.</p>
-          </div>
-          <div className={mainStyles.projectItem}>
-            <h3>Projeto 2</h3>
-            <p>Descrição do projeto 2.</p>
-          </div>
-        </div>
-      </section>
+  <h2>
+    <span>Projetos</span>
+  </h2>
+  <p className={mainStyles.projectsIntro}>
+    Alguns dos meus trabalhos recentes — focados em performance, design limpo e boas práticas.
+  </p>
+
+  <div className={mainStyles.projectGrid}>
+    <div className={mainStyles.projectCard}>
+      <div className={mainStyles.projectHeader}>
+        <h3>FinanceCO</h3>
+        <p className={mainStyles.projectType}>Web App</p>
+      </div>
+      <p className={mainStyles.projectDescription}>
+        Aplicação financeira fullstack para controle de despesas, utilizando React, Node.js e MongoDB.
+      </p>
+      <div className={mainStyles.techList}>
+        <span>React</span>
+        <span>Node.js</span>
+        <span>MongoDB</span>
+      </div>
+      <div className={mainStyles.projectLinks}>
+        <a href="#" target="_blank" rel="noopener noreferrer">
+          <FaGithub /> Código
+        </a>
+        <a href="#" target="_blank" rel="noopener noreferrer">
+          🔗 Demo
+        </a>
+      </div>
+    </div>
+
+    <div className={mainStyles.projectCard}>
+      <div className={mainStyles.projectHeader}>
+        <h3>ECG Analyzer</h3>
+        <p className={mainStyles.projectType}>Machine Learning</p>
+      </div>
+      <p className={mainStyles.projectDescription}>
+        Modelo de deep learning para detecção de inversão de eletrodos em ECGs com alta precisão.
+      </p>
+      <div className={mainStyles.techList}>
+        <span>Python</span>
+        <span>TensorFlow</span>
+        <span>Matplotlib</span>
+      </div>
+      <div className={mainStyles.projectLinks}>
+        <a href="#" target="_blank" rel="noopener noreferrer">
+          <FaGithub /> Código
+        </a>
+      </div>
+    </div>
+
+    <div className={mainStyles.projectCard}>
+      <div className={mainStyles.projectHeader}>
+        <h3>Portfólio Pessoal</h3>
+        <p className={mainStyles.projectType}>Frontend</p>
+      </div>
+      <p className={mainStyles.projectDescription}>
+        Meu portfólio profissional, desenvolvido com React e animações suaves em CSS moderno.
+      </p>
+      <div className={mainStyles.techList}>
+        <span>React</span>
+        <span>CSS Modules</span>
+      </div>
+      <div className={mainStyles.projectLinks}>
+        <a href="#" target="_blank" rel="noopener noreferrer">
+          <FaGithub /> Código
+        </a>
+        <a href="#" target="_blank" rel="noopener noreferrer">
+          🔗 Demo
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
 
       <section className={mainStyles.experienceSection}>
         <h2>Experiências profissionais</h2>
